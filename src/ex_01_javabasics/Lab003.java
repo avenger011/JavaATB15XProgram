@@ -15,6 +15,7 @@ for(int i=1;i<num;i++)
     {System.out.println(a+b);
         a=b;
         b=i;
+
     }
 }
 

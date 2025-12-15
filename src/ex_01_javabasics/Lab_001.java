@@ -12,6 +12,7 @@ public class Lab_001 {
             index=index+2;
             count=count+1;
 
+
         }
         System.out.println(count);
     }

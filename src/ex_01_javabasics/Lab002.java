@@ -9,7 +9,7 @@ public class Lab002 {
         for(char ch:arr2)
         {
             if(Character.isUpperCase(ch))
-            {System.out.println(ch);}
+            {System.out.println(ch+" ");}
 
         }
 }
