@@ -1,30 +1,59 @@
 // 1. Remove 'static' from the top-level class
- static class GetSet {
-    // 2. Encapsulation: Usually, 'val' should be private when using getters/setters
-    private int val = 100;
+ static class course{
 
-    public void setVal(int val) {
-        this.val = val;
+    int course_id;
+    String course_name;
+
+    public int getCourse_id() {
+        return course_id;
     }
 
-    public int getVal() {
-        return val;
+    public void setCourse_id(int course_id) {
+        this.course_id = course_id;
+    }
+
+    public String getCourse_name() {
+        return course_name;
+    }
+
+    public void setCourse_name(String course_name) {
+        this.course_name = course_name;
+    }
+    course(int a,String b){
+        this.course_id=a;
+        this.course_name=b;
     }
 }
 
-// 3. Create a wrapper class for your main method
+static class student extends course{
+    String stud_name;
+    int Stud_id;
 
- static class met extends GetSet{
-     met(int a){
-         GetSet l1=new GetSet();
-         if(a>l1.getVal())
-         {
-             System.out.println("the number is greater than 100");
-         }
-     }
+
+    public int getStud_id() {
+        return Stud_id;
+    }
+
+    public void setStud_id(int stud_id) {
+        Stud_id = stud_id;
+    }
+
+    public String getStud_name() {
+        return stud_name;
+    }
+
+    public void setStud_name(String stud_name) {
+        this.stud_name = stud_name;
+    }
+    student(String k,int p)
+    { this.Stud_id=p;
+     this.stud_name=k;
+    super(p,k);
+
+    }
 }
-
-public static void main(String[] args){
-     met n=new met(101);
-
+public static void main(String[] args)
+{
+    student c1=new student("DSA course",34);
+    System.out.println(c1.getStud_id()+" "+c1.getStud_id());
 }

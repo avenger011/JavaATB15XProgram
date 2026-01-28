@@ -4,20 +4,21 @@ public class lab23 {
     static class book{
      int cost;
      String title;
-        book()
+        book(String t)
         {
-            this.cost=0;
-            this.title="this is not arg";
+
+            this.title=t;
         }
        book(int n,String s)
        {
            this.cost=n;
-           this.title=s;
+           this(s);
        }
     }
     public static void main(String[] args)
     {
       book l1=new book(23,"this is by given parameter");
         System.out.println(l1.title);
+        System.out.println(l1.cost);
     }
 }

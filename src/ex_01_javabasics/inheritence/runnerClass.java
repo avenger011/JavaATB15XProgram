@@ -7,4 +7,5 @@ public class runnerClass extends son{
         System.out.println(l2.res);
         System.out.println(l1.res);
     }
+
 }
