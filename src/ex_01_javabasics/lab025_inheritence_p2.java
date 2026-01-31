@@ -10,6 +10,8 @@ public class lab025_inheritence_p2 {
     {
 
 
+
+
         @Override
         void property() {
             System.out.println("property 1 acquired ");

@@ -12,6 +12,7 @@ public class lab025_inheritence {
         //the meaning of abstract class means that in that the class ma=ethod is not defined , it will be defined in child class
    }
 
+
    static class carp2 extends carp1{
 
 
